@@ -27,11 +27,11 @@ exports.new = function (req, res) {
     contact.gender = req.body.gender;
     contact.email = req.body.email;
     contact.phone = req.body.phone;
-// save the contact and check for errors
+    // save the contact and check for errors
     contact.save(function (err) {
         // if (err)
         //     res.json(err);
-res.json({
+    res.json({
             message: 'New contact created!',
             data: contact
         });
@@ -59,7 +59,7 @@ Contact.findById(req.params.contact_id, function (err, contact) {
         contact.gender = req.body.gender;
         contact.email = req.body.email;
         contact.phone = req.body.phone;
-// save the contact and check for errors
+        // save the contact and check for errors
         contact.save(function (err) {
             if (err)
                 res.json(err);
