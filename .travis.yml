@@ -5,6 +5,9 @@ node_js:
 
 before_script: chmod 0777 ./resthub/node_modules/.bin/mocha
 
+services:
+  - mongodb
+  
 script:
   - echo '******Build Starting...******'
   - echo 'Installing Dependencies'
