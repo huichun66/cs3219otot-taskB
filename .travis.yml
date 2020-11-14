@@ -8,6 +8,16 @@ before_script: chmod 0777 ./resthub/node_modules/.bin/mocha
 services:
   - mongodb
 
+# deploy:
+#     provider: lambda
+#     access_key_id: PASTE_ACCESS_KEY_ID_HERE
+#     secret_access_key:  PASTE_ACCESS_KEY_HERE
+#     function_name: "helloworld"
+#     region: "us-east-1"
+#     role: "arn:aws:iam::391516711798:role/service-role/helloworld-role-cgq6lxgz"
+#     runtime: "nodejs12.x"
+#     handler_name: "handler"
+
 script:
   - echo '******Build Starting...******'
   - echo 'Installing Dependencies'
