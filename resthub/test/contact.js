@@ -15,8 +15,6 @@ chai.use(chaiHttp);
 //Our parent block
 describe('Contacts', () => {
     beforeEach((done) => { //Before each test we empty the database
-        setTimeout(done, 10000);
-
         Contact.deleteMany({}, (err) => {
            done();
         });
