@@ -6,6 +6,8 @@ node_js:
 script:
   - echo '******Build Starting...******'
   - echo 'Installing Dependencies'
+  - cd resthub
   - npm install
   - echo 'Running Tests'
   - npm test
+  - echo '******Build Successful!******'
